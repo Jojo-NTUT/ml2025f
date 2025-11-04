@@ -153,7 +153,7 @@
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。
+      這次作業是訓練模型，一開始接觸colab，以及陌生的訓練模型覺得很害怕，但後來在簡報的詳細說明、以及身邊同學的幫忙下，逐漸地瞭解訓練模型的整體流程，所以非常感謝大家的幫助。尤其是在colab時不時斷連的挫折下，有朋友的鼓勵和幫助是我能順利完成這份作業的關鍵因素。
     </div>
   </div>
 
@@ -169,22 +169,22 @@
         </tr>
         <tr>
           <td rowspan="4" id="myTotal"></td>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox1"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox1" checked></td>
           <td id='m1'>4</td>
-          <td>Simple baseline - 描述</td>
+          <td>Simple baseline - 完成colab baseline的訓練並產生權重檔</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox2"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox2" checked></td>
           <td id='m2'>4</td>
-          <td>Medium baseline - 描述</td>
+          <td>Medium baseline - 調整並增加使用的訓練資料集(AICUP_training.json)</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox3"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox3" checked></td>
           <td id='m3'>2</td>
-          <td>Strong baseline - 描述</td>
+          <td>Strong baseline - 使用其他模型(例如. Attn U-Net、UNETR、Swin UNETR...等)，對心臟資料進行訓練，並繳交colab程式碼</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox4" checked></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox4" ></td>
           <td id='m4'>-10</td>
           <td>沒有寫100字心得</td>
         </tr>
@@ -196,14 +196,57 @@
   <!-- ------------------------------------------------>
   <div class="row hw12 bottomrow">
     <div class="col-md-12 twenty">
-      <video id="video1" style="width:100%;max-width:100%;" controls="">
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-      </video>
+      <table>
+        <tr>
+          <td> Simple Baseline Dice分數圖片
+          <img src="Simple_baseline.png" width="100%" height="560">
+        </tr>
+        <tr>
+          <td> Medium Baseline Dice分數圖片
+          <img src="Medium_baseline.png" width="100%" height="560">
+        </tr>
+      </table>
     </div>
   </div>
 
   <!-- ------------------------------------------------>
-
+<div class="row hw12 bottomrow">
+    <div class="col-md-12 twenty">
+      Strong baseline：
+      <table>
+        <tr>
+          <td> attention_unet Dice分數圖片
+          <a href="">Colab 程式碼連結</a><br>
+          <img src="Strong_baseline_attention_unet.png" width="100%" height="560">
+        </tr>
+        <tr>
+          <td> cotr Dice分數圖片
+          <a href="">Colab 程式碼連結</a><br>
+          <img src="Strong_baseline_cotr.png" width="100%" height="560">
+        </tr>
+        <tr>
+          <td> unetr Dice分數圖片
+          <a href="">Colab 程式碼連結</a><br>
+          <img src=".png" width="100%" height="560">
+        </tr>
+        <tr>
+          <td> swinunetr Dice分數圖片
+          <a href="">Colab 程式碼連結</a><br>
+          <img src=".png" width="100%" height="560">
+        </tr>
+        <tr>
+          <td> unetcnx_a1 Dice分數圖片
+          <a href="">Colab 程式碼連結</a><br>
+          <img src=".png" width="100%" height="560">
+        </tr>
+        <tr>
+          <td> testnet Dice分數圖片
+          <a href="">Colab 程式碼連結</a><br>
+          <img src=".png" width="100%" height="560">
+        </tr>
+      </table>
+    </div>
+  </div>
   <!-- ------------------------------------------------>
 
 
@@ -252,3 +295,4 @@
 
 </body>
 </html>
+
