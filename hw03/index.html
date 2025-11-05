@@ -30,6 +30,7 @@
       font-size:  16pt;
       margin-left: auto;
       margin-right: auto;
+      width: 100%;
   }
 
   td,
@@ -153,7 +154,7 @@
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。
+      這次作業是用上次作業訓練出來的權重去推論看我們訓練好的權重對於測試集的效果如何，在這之中出現了很多狀況，例如發現有些模型訓練出的權重沒辦法使用老師給的程式碼做推論，或是程式碼中出現了一些錯誤，但在現在科技GPT的幫助下還是有驚無險地完成了這次的作業。在這次的作業過後對於colab以及機器學習的模型訓練方法也增加了更多的理解。
     </div>
   </div>
 
@@ -169,22 +170,22 @@
         </tr>
         <tr>
           <td rowspan="4" id="myTotal"></td>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox1"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox1" checked></td>
           <td id='m1'>4</td>
-          <td>Simple baseline - 描述</td>
+          <td>Simple baseline - 完成colab baseline的推論並上傳至競賽網頁</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox2"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox2" checked></td>
           <td id='m2'>4</td>
-          <td>Medium baseline - 描述</td>
+          <td>Medium baseline - 使用HW2 Medium baseline訓練出來的權重檔推論50筆資料並上傳至競賽網頁</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox3"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox3" checked></td>
           <td id='m3'>2</td>
-          <td>Strong baseline - 描述</td>
+          <td>Strong baseline - 使用HW2 Strong Baseline訓練出來的權重檔對patient0051做推論</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox4" checked></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox4" ></td>
           <td id='m4'>-10</td>
           <td>沒有寫100字心得</td>
         </tr>
@@ -194,16 +195,39 @@
   </div>
 
   <!-- ------------------------------------------------>
-  <div class="row hw12 bottomrow">
-    <div class="col-md-12 twenty">
-      <video id="video1" style="width:100%;max-width:100%;" controls="">
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-      </video>
-    </div>
-  </div>
+  <table>
+        <tbody><tr>
+          <td> Simple Baseline 圖片
+          <img src="simple.png" width="100%" height="560">
+        </td></tr>
+        <tr>
+          <td> Medium Baseline 圖片
+          <img src="medium.png" width="100%" height="560">
+        </td></tr>
+      </tbody></table>
+	  </div>
+	</div>
 
   <!-- ------------------------------------------------>
-
+  <div class="row hw12 bottomrow">
+  	  <div class="col-md-12 twenty">
+  		Strong Baseline 圖片  		
+  		<table>
+  		  <tbody><tr>
+  			<td> 標註模型圖片
+  			<img src="1.png" width="100%" height="560">
+  		  </td></tr>
+        <tr>
+          <td> 標註模型剖半圖片
+          <img src="half.png" width="100%" height="560">
+        </td></tr>
+        <tr>
+          <td> 標註模型任一角度剖半圖片
+          <img src="any_angle.png" width="100%" height="560">
+        </td></tr>
+  		</tbody></table>
+  	  </div>
+  	</div>
   <!-- ------------------------------------------------>
 
 
@@ -252,3 +276,4 @@
 
 </body>
 </html>
+
